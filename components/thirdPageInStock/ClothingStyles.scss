@@ -1,0 +1,288 @@
+.inStock-wrapper{
+    width:100%;
+    margin:20px auto 20px;
+    background-color: #ffffff;
+    border:solid 1px #DEE2E7;
+    border-radius:6px;
+    padding:20px 19px;
+   
+    .content{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1.5fr;
+        gap:10px;
+
+        .clothing-img{
+          
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: flex-start;
+          
+        .main-shirt{
+            border:solid 1px #DEE2E7;
+            border-radius:6px;
+            padding:16px 18px 19px 17px;
+            margin-bottom:20px;
+            max-width:380px;
+            width:100%;
+            cursor: pointer;
+
+            img{
+                width:100%;
+                height:345px;
+            }
+        } 
+
+      
+
+        .shirts{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height:56px;
+            height:100%;
+          
+            img{
+                width:56px;
+                height:56px;
+             
+                padding:5px;
+                border:solid 1px #DEE2E7;
+                border-radius:6px;
+                margin-right:9px;
+                cursor: pointer;
+            }
+
+            img:hover{
+                transform: scale(1.1);
+                transition: 0.5s;
+                border:solid 2px #DEE2E7;
+            }            
+        }
+        }
+    }
+}
+
+
+.shirt-content-wrapper{
+    padding-right:40px;
+    width:100%;
+    margin-left:22px;
+    margin-bottom:44px;
+
+    .in-stock{
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       margin-bottom:5px;
+
+
+      .check{
+      font-size:17px;
+      font-weight: normal;
+        color:#00B517;
+      }
+
+      span{
+        color:#00B517;
+        font-size:16px;
+        font-family: "Inter";
+        letter-spacing: -0.2px;
+        line-height: 24px;
+        margin-left:5px;
+      }
+    }
+    .title{
+        
+        h4{
+            color:#1C1C1C;
+           font-size:20px;
+           font-weight:600;
+           font-family:"Inter-bold";
+           letter-spacing: -0.2px;
+           line-height: 28px;
+           margin-bottom:11px;
+           max-width:384px;
+           width:100%;
+        }
+    }
+
+    .number-instock{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+
+        .star{
+            color:#FF9017;
+            cursor: pointer;
+          
+        }
+         .star:last-of-type{
+            color:#D5CDC5;
+            margin-right:8px;
+         }
+        span{
+            color:#FF9017;
+            font-size:16px;
+            font-family: "Inter";
+            margin-right:10px;
+        }
+        .dot{
+            background-color: #DBDBDB;
+            width:6px;
+            height:6px;
+            border-radius:50%;
+        }
+        img{
+            margin:0 9px 0 11px;
+        }
+        p{
+            color:#787A80;
+            font-size:16px;
+            font-family:"Inter";
+            margin-right:8px;
+            cursor: pointer;
+        }
+        p:hover{
+            color:#FA3434;
+        }
+    }
+    .cloths-price {
+        background-color: #fff0df;
+        display: flex;
+        align-items: center;
+        padding: 16px 18px;
+        margin: 12px 0 15px 0;
+        max-width: 430px;
+        width: 100%;
+      
+        .price-pcs {
+          padding-right: 48px;
+          border-right: solid 1px #bdc1c8;
+          margin-right: 10px;
+      
+          &:last-of-type {
+            border: none;
+          }
+      
+          h5 {
+            color: #1c1c1c;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "bold";
+            margin-bottom: 6px;
+            cursor: pointer;
+      
+          }
+          h5:hover{
+            color:#FA3434;
+          }
+
+          p{
+            color:#606060;
+            font-size:14px;
+            font-family:"Inter";
+            cursor: pointer;
+          }
+          p:hover{
+            color:#FA3434;
+          }
+        }
+      }
+      .clothes-description{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+       
+     
+        .clothes-item.first {
+            border-bottom: 1px solid #E0E0E0;
+            width:100%;
+          }
+          
+          .clothes-item.fourth {
+            border-bottom: 1px solid #E0E0E0;    
+            width:100%;
+          }
+          
+          .clothes-item.last {
+            border-bottom: 1px solid #E0E0E0;      
+            width:100%;
+          }
+
+        .clothes-item{
+
+            display: flex;
+            font-size:16px;
+            font-family: "Inter";
+
+            .about{
+              width:141px;
+            }
+
+            div{
+                width:180px;
+            }
+
+            .clothes-title{
+                color:#8B96A5;
+                margin:9px 0 9px 0;
+                  
+            }
+            .clothes-descript{
+                color:#505050;
+                margin:9px 0 9px 0;
+                   
+            }
+        }
+      }
+}
+
+@media(max-width:1072px){
+
+  .inStock-wrapper{
+
+    .content{
+      grid-template-columns: 100%;
+
+
+      .clothing-img{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;   
+      }
+     
+    }
+  }
+
+  .shirt-content-wrapper{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width:768px){
+  .inStock-wrapper{
+
+    .content{
+      .clothing-img{
+        display: none;
+       }
+
+       .in-stock{
+        display: none;
+       }
+    }
+    .cloths-price{
+      display: none;
+    }
+  }
+}
+
+

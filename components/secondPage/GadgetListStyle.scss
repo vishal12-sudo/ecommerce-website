@@ -1,0 +1,293 @@
+.gadget-wrapper{
+    max-width:920px;
+    width:100%;
+    border:1px solid #DEE2E7;
+    border-radius:6px;
+    background-color: #FFFFFF;
+    padding:9px 20px 31px 9px;
+    margin-bottom:10px;
+    display: flex;
+    min-width:340px;
+
+
+    
+
+    .gadget-img{
+        max-width:184px;
+        height:184px;
+        width:100%;
+      
+
+        img{
+            width:100%;
+            height:auto;
+            transform: scale(1);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        :hover{
+            transform: scale(1.06);
+            transition: 0.5s;
+        }
+    }
+
+    .gadget-info{
+           margin-left:10px;
+
+           .shipping-mobile{
+                display: none;
+                color:#00B517;
+                font-size:16px;
+                font-family:"Inter";
+        }
+
+        .gadget-title{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom:16px;
+
+            p{
+                color:#1C1C1C;
+                font-size:16px;
+                font-family: "inter-bold";
+                font-weight:bold;
+            }
+
+
+            img{
+                border: solid 1px #DEE2E7;
+                border-radius:4px;
+                padding:4px;
+                cursor: pointer;
+            }
+
+            img:Hover{
+                transform: scale(1.06);
+                transition: 0.5s;
+            }
+        }
+        .gadget-price{
+             margin-bottom:5px;
+             display: flex;
+             align-items: center;
+
+            
+
+           .price{
+            color:#1C1C1C;
+            font-size:20px;
+            line-height: 28px;
+            letter-spacing: -0.2px;
+            font-family:"bold";
+            margin-right:7px;
+           }
+             .sale{
+                color:#8B96A5;
+                font-size:16px;
+                font-family: "inter";
+                text-decoration: line-through;
+             }
+        }
+
+        .gadget-shipping{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom:12px;
+
+           
+            .item-rating-star{
+                color: #FF9017;
+                cursor: pointer;
+               
+            }
+            .item-rating-star:last-of-type {
+                color: #8B96A5;
+                margin-right:6px;
+              }
+              .rate{
+                color:#FF9017;
+                font-size:16px;
+                font-family:"Inter";
+              }
+    
+            span{
+                width:6px;
+                height:6px;
+                border-radius:50%;
+                background-color: #8B96A5;
+                margin:0 9px 0 9px;
+
+            }
+            .orders{
+                color:#8B96A5;
+                font-size:16px;
+                font-family:"Inter";
+
+            }
+            .shipping{
+                color:#00B517;
+                font-size:16px;
+                font-family:"Inter";
+
+            }
+
+         
+
+        }
+    }
+    .description{
+        color:#505050;
+        font-size:16px;
+        font-family:"Inter";
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        margin-bottom:6px;
+    }
+
+    .details{
+        color:#0D6EFD;
+        font-size:16px;
+        font-family: "Inter-bold";
+        cursor: pointer;
+    }
+}
+
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top:20px;
+
+
+
+    select{
+        max-width:125px;
+        width:100%;
+        height:40px;
+        padding:10px;
+        -moz-appearance:none; 
+        -webkit-appearance:none; 
+        appearance:none;
+        background-image: url("../../assets/expand_more.png");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px);
+        outline: none;
+        border:1px solid #DEE2E7;
+        border-radius:4px;
+        cursor: pointer;
+        color:#1C1C1C;
+        font-size:16px;
+        font-family: "Inter";
+        margin-right:9px;
+    }
+
+    button{
+        max-width:44px;
+        width:100%;
+        padding:10px 18px;
+        text-align: center;
+        cursor: pointer;
+        color:#1C1C1C;
+        font-size:16px;
+        font-family: "Inter-bold";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        border:solid 1px #DEE2E7;
+        border-radius:4px;       
+    }
+
+    button:hover{
+        background-color: #EFF2F4;
+        color:#8B96A5;
+    }
+
+    img{
+        background-color: #FFFFFF;
+        border:solid 1px #DEE2E7;
+        max-width:41.5px;
+        width:100%;
+        border-radius:4px;       
+        padding:9px;  
+    }
+   
+}
+
+
+@media(max-width:768px){
+
+    .gadget-wrapper{
+      
+        .gadget-info{
+
+            .shipping-mobile{
+             display: block;
+            }
+     
+     
+             .gadget-price{
+     
+                 .sale{
+                     display: none;
+                 }
+             }
+         }
+     
+         .description{
+             display:none;
+         }
+         .details{
+             display: none;
+         }
+         .shipping{
+             display: none;
+         }  
+
+         .gadget-img{
+    
+
+            img{
+             transition: none;
+       
+            }
+            img:hover{
+                transform: scale(1);
+                transition: 0.5s;
+               
+            }
+        }
+         
+    }  
+
+ 
+}
+
+@media(max-width:450px){
+    .gadget-wrapper{
+      
+        .gadget-info{
+            margin-left:0;
+          
+            .gadget-title{
+                p{
+                    font-size:13px;
+                }    
+            }
+            .gadget-price{
+                .price{
+                  font-size:16px;
+                }
+
+            }
+            .gadget-shipping{
+                .orders{
+                    font-size: 13px;
+                }
+            }
+        }
+      
+    }
+}

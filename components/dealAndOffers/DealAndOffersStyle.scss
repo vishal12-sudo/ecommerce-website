@@ -1,0 +1,198 @@
+.offer-wrapper{
+    border:solid #DEE2E7 1px;
+    background-color: #FFFFFF;
+    width:82%;
+    margin:auto;
+    display: flex;
+    background-color:#FFFFFF;
+    justify-content:space-evenly;
+    border-radius:4px;
+    z-index:-1;
+
+
+    .time-wrapper{
+        padding:8px 19px 17px 20px;
+    
+        h4{
+            font-size:20px;
+            font-weight:600;
+            letter-spacing:-0.2px; 
+            line-height: 28px;
+            color:#1C1C1C;
+            font-family:'Inter-bold';
+        }
+        .desktop{
+            font-size:16px;
+            color:#8B96A5;
+            font-weight:400;
+            margin-bottom:18px;
+            font-family:"Inter";
+        }
+        .mobile{
+            display: none;
+            font-size:16px;
+            color:#8B96A5;
+            font-weight:400;
+            margin-bottom:18px;
+            font-family:"Inter";
+        }
+
+        .time{
+            display: flex;
+            align-items: center;
+           
+          
+           
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #606060;
+                border-radius:6px;
+                padding:8px;
+                margin-right:6px;
+                max-width:45px;
+                width:100%;
+            }
+            p{
+                color:#FFFFFF;
+                font-size:12px;
+                font-weight:400;
+                margin-bottom:0;
+                text-align: center;
+                font-family:"Inter";
+            }
+
+            span{
+                font-size:16px;
+                color:#FFFFFF;
+                font-weight:700;
+                text-align: center;
+                font-family:'Inter-bold';
+            }
+        }
+    }
+
+    .slide-wrapper{
+        display:flex;
+        align-items: center;
+        margin-left:63px;
+        z-index:0;
+        overflow: hidden;
+       
+      
+        .tech{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-left:solid 1px #DEE2E7 ;
+            padding:8px 19px 17px 20px;
+           max-width: 179px;
+           width:100%;
+            transition: 0.5s;
+            transform: scale(1);
+            cursor: pointer;
+            :hover{
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+
+            img{
+                width:100%;
+               
+            }
+            p{
+                font-size:16px;
+                color:#1C1C1C;
+                line-height:24px;
+                letter-spacing: -0.2px;
+                margin-top:11px;
+                font-family:"Inter";
+            }
+
+            span{
+                background-color:#FFE3E3;
+                color:#EB001B;
+                padding: 3px 13px 4px 13px;
+                border-radius:29px;
+                font-size:14px;
+                font-weight:500;
+                letter-spacing: -0.2px;
+                font-family:"Inter";
+            }
+        }
+
+    }
+}
+
+@media(max-width:1024px){
+    .offer-wrapper{
+        width:100%;
+    }
+}
+
+@media(max-width:768px) {
+    .offer-wrapper{
+       
+       display: block;
+       overflow: hidden;
+
+       .slide-wrapper{
+        margin-left:0;
+
+           .tech{
+            border-top:solid 1px #DEE2E7 ;
+           }
+       }
+
+    .time-wrapper{
+        padding:11px 10px 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        h4{
+            font-size:18px;
+            line-height:normal;   
+        }
+        .mobile{
+            display: block;
+            font-size:13px;
+        }
+        .desktop{
+            display: none;
+        }
+
+
+        .time{
+            display: flex;
+            align-items: center;
+
+            .day{
+                display: none;
+            }
+
+            div{
+                background-color: #EFF2F4;
+                padding:6px;
+                margin-right:6px;
+            }
+            p{
+                color:#8B96A5;
+                font-size:11px;     
+            }
+            span{
+                color:#8B96A5;
+                font-size:16px;
+                font-weight:600;
+            }
+        }
+        
+    }
+    }
+
+  
+
+}

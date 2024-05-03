@@ -1,0 +1,194 @@
+.main-checkout-wrapper{
+    max-width:280px;
+    width:100%;
+
+    .checkout-wrapper{
+        background-color: #FFFFFF;
+        border:solid 1px #DEE2E7;
+        box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
+        border-radius: 6px;
+        padding:20px 16px 21px 20px;
+
+
+        .pay-icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width:100%;
+           
+
+            img{
+               max-width:34px;
+                height:22px;
+                width:100%;
+                border:solid 1px #DEE2E7;
+                padding:5px;
+                border-radius:5px;
+                cursor: pointer;
+            }
+        }   
+    }
+
+    .coupon{
+        margin-top:82px;
+        background-color: #FFFFFF;
+        border:solid 1px #DEE2E7;
+        box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
+        border-radius: 6px;
+        padding:20px 16px 22px 16px;
+        width:100%;
+        margin-bottom:12px;
+       
+      
+    
+        p{
+            color:#505050;
+            margin-bottom:14px;
+            font-size:16px;
+            font-family:"Inter";
+        }
+
+        div{
+
+           display: flex;
+           align-items: center;
+           justify-content: center;
+
+            input{
+                max-width:164px;
+                width:100%;
+                padding:9px 5px 9.5px 10px;
+                outline: none;
+                color:#8B96A5;
+                font-size:16px;
+                font-family: "Inter";
+                border:none;
+                border:solid 1px #DEE2E7;
+                box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
+                border-right:none;
+                border-radius:5px 0 0 5px;
+            }
+    
+            button{
+                padding:12px;
+                border:none;
+                border:solid 1px #DEE2E7;
+                box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
+                border-radius:0 5px 5px 0;
+                height:40px;
+                max-width:80px;
+                width:100%;
+                cursor: pointer;
+            }
+
+        }
+    
+   
+    }
+
+    .coupon-checkout{
+     
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom:12px;
+
+            p{
+                color:#505050;
+                font-size:16px;
+                letter-spacing: -0.2px;
+                line-height: 24px;
+                font-family: "Inter";
+                margin-bottom:5px;
+            }
+            span{
+                font-size:16px;
+                letter-spacing: -0.2px;
+                line-height: 24px;
+                font-family: "Inter";
+                margin-bottom:5px;
+            }
+
+            .grey{
+                color:#505050;
+            }
+            .red{
+                color:#FA3434;
+            }
+            .green{
+                color:#00B517;
+            }
+
+        }
+    }
+    .checkout{
+        display: flex;
+        flex-direction: column;
+
+
+        div{
+           margin:23px 0 22px;
+           display: flex;
+           align-items: center;
+           justify-content:space-between;
+
+           h6{
+            color: #1C1C1C;
+            font-size: 16px;
+            font-family: "Inter-bold";   
+           }
+
+           h4{
+            color: #1C1C1C;
+            font-family: "bold";
+            font-size: 20px;
+            line-height: 28px; 
+            letter-spacing: -0.2px;
+           }
+        }
+
+        button{
+            background-color: #00B517;
+            border: none;
+            border-radius: 8px;
+            color:#FFFFFF;
+            height:54px;
+            max-width:248px;
+            width:100%;
+            cursor: pointer;
+            font-size:18px;
+            font-family:"Inter-bold";
+            margin-bottom:18px;
+        }
+        button:hover{
+            font-family:"bold"
+        }
+    }
+
+}
+
+@media(max-width:1024px){
+    .main-checkout-wrapper{  
+       max-width:none;
+       width:98.5%;
+       margin-right:6px;
+     
+         .checkout-wrapper{
+
+            button{
+                max-width:none
+            }
+
+            .pay-icons{
+                display: none;
+            }
+         }
+        .coupon{
+            display: none;
+}
+    }
+}
