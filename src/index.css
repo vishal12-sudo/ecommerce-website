@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+ 
+
+}
+
+
+body, .App{
+
+    height:100vh;
+    background-color:rgba(255, 255, 255, 1);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/fonts/Inter-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "Inter-bold";
+    src: url("../src/fonts/Inter-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "bold";
+    src: url("../src/fonts/Inter-Bold.ttf");
+  }
